@@ -40,7 +40,7 @@ public class producer_consumer {
 
             signalS();
         } else {
-            System.out.println("Cannot produce: Buffer is full or semaphore locked.");
+            System.out.println("Cannot produce: Buffer is full.");
         }
     }
 
@@ -55,7 +55,7 @@ public class producer_consumer {
 
             signalS();
         } else {
-            System.out.println("Cannot consume: Buffer is empty or semaphore locked.");
+            System.out.println("Cannot consume: Buffer is empty.");
         }
     }
 
@@ -68,7 +68,7 @@ public class producer_consumer {
         int choice;
 
         do {
-            System.out.println("\n--- Producer-Consumer Menu ---");
+            System.out.println("\n========= Producer-Consumer Menu ========");
             System.out.println("1. Produce");
             System.out.println("2. Consume");
             System.out.println("3. Display Status");
